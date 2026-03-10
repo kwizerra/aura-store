@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA — Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+  <!-- page-body class removes the overflow:hidden from the homepage body
+       so we can scroll through the product grid -->
+
+  <div class="frame page-frame">
+    <!-- page-frame lets the frame grow with content instead of being locked to screen height -->
+    <div class="container page-container">
+
+      <!-- Same navbar on every page — consistent branding -->
+      <header class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">AURA</a></div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="nav-active">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <!-- PAGE TITLE -->
+      <div class="page-title">
+        <h1>New Arrivals</h1>
+        <!-- The line under the title is a decorative <hr> styled in CSS -->
+        <hr class="title-line">
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <!-- CSS grid will auto-arrange these cards into columns -->
+      <!-- On desktop: 3 columns. Tablet: 2. Phone: 1 -->
+      <div class="product-grid">
+
+        <!-- PRODUCT CARD — this repeats for each item -->
+        <!-- href points to product.html — in a real store each item would have its own ID -->
+        <a href="product.html" class="product-card">
+          <!-- Placeholder image — replace src with your Pinterest finds later -->
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura1/400/500" alt="Oversized Tee">
+            <!-- "NEW" badge overlaid on top of the image -->
+            <span class="card-badge">NEW</span>
+          </div>
+          <div class="card-info">
+            <p class="card-name">Oversized Vintage Tee</p>
+            <p class="card-price">UGX 45,000</p>
+          </div>
+        </a>
+
+        <a href="product.html" class="product-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura2/400/500" alt="Cargo Pants">
+          </div>
+          <div class="card-info">
+            <p class="card-name">Relaxed Cargo Pants</p>
+            <p class="card-price">UGX 85,000</p>
+          </div>
+        </a>
+
+        <a href="product.html" class="product-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura3/400/500" alt="Hoodie">
+            <span class="card-badge">HOT</span>
+          </div>
+          <div class="card-info">
+            <p class="card-name">Washed Pullover Hoodie</p>
+            <p class="card-price">UGX 95,000</p>
+          </div>
+        </a>
+
+        <a href="product.html" class="product-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura4/400/500" alt="Shorts">
+          </div>
+          <div class="card-info">
+            <p class="card-name">Utility Shorts</p>
+            <p class="card-price">UGX 55,000</p>
+          </div>
+        </a>
+
+        <a href="product.html" class="product-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura5/400/500" alt="Cap">
+            <span class="card-badge">NEW</span>
+          </div>
+          <div class="card-info">
+            <p class="card-name">Aura Logo Cap</p>
+            <p class="card-price">UGX 35,000</p>
+          </div>
+        </a>
+
+        <a href="product.html" class="product-card">
+          <div class="card-img-wrap">
+            <img src="https://picsum.photos/seed/aura6/400/500" alt="Jacket">
+          </div>
+          <div class="card-info">
+            <p class="card-name">Lightweight Coach Jacket</p>
+            <p class="card-price">UGX 120,000</p>
+          </div>
+        </a>
+
+      </div><!-- end .product-grid -->
+
+      <!-- FOOTER inside the page -->
+      <footer class="site-footer">
+        <p>© 2025 AURA Store. Uganda.</p>
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </footer>
+
+    </div><!-- end .container -->
+  </div><!-- end .frame -->
+</body>
+</html>

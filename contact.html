@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA — Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="page-body">
+  <div class="frame page-frame">
+    <div class="container page-container">
+
+      <header class="navbar">
+        <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">AURA</a></div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="nav-active">Contact</a>
+        </nav>
+      </header>
+
+      <div class="contact-wrap">
+        <h1 class="about-heading">Get in Touch</h1>
+        <hr class="title-line">
+
+        <!-- Two columns: form on left, info on right -->
+        <!-- On mobile they stack vertically -->
+        <div class="contact-layout">
+
+          <!-- CONTACT FORM -->
+          <!-- action="#" means nothing happens on submit — you'd wire this to a backend later -->
+          <form class="contact-form" action="#" method="POST">
+
+            <div class="form-group">
+              <!-- <label> tells the user what to type. for="name" links it to the input below -->
+              <label for="name">Your Name</label>
+              <!-- required means the browser won't submit if this is empty -->
+              <input type="text" id="name" name="name" placeholder="e.g. Shaun" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <!-- type="email" makes the keyboard show @ on phones -->
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <!-- textarea is a multi-line text box. rows gives it initial height -->
+              <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+
+          </form>
+
+          <!-- CONTACT INFO SIDEBAR -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <p class="contact-label">WhatsApp</p>
+              <!-- Opens WhatsApp directly -->
+              <a href="https://wa.me/256788214610" target="_blank" class="contact-value">+256 788 214 610</a>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Kampala, Uganda</p>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Hours</p>
+              <p class="contact-value">Mon – Sat, 9am – 7pm</p>
+            </div>
+
+            <!-- Large decorative A — just for visual interest -->
+            <p class="contact-watermark">A</p>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>© 2025 AURA Store. Uganda.</p>
+        <div class="footer-links">
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+</html>
